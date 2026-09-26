@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>teaHeaven</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <section id="screen1" class="screen active" aria-label="Balcão de Pedidos">
+      <div id="customer-area"></div>
+      <div id="ready-cup-area"></div>
+    </section>
+
+    <section id="screen2" class="screen" aria-label="Cozinha">
+      <!-- Lado esquerdo: ingredientes em 3x2 -->
+      <div id="ingredients-shelf"></div>
+
+      <!-- Lado direito: linha 1 = bule + água, linha 2 = 3 xícaras -->
+      <div id="kitchen-right">
+        <div id="teapot-wrap" draggable="true">
+          <div id="teapot-hud"></div>
+          <div class="sprite" data-emoji="🫖" style="width:100%;height:100%;">
+            <img id="teapot" src="bule.png" alt="bule">
+          </div>
+          <button id="clear-cauldron" title="Esvaziar bule">🗑️</button>
+        </div>
+        <div id="water-area"></div>
+        <div id="cups-area"></div>
+      </div>
+
+      <div id="cooktop-area">
+        <div class="burner" id="burner-1" data-id="1">
+          <img class="fire" src="fogo.png" alt="fogo">
+        </div>
+        <div class="burner" id="burner-2" data-id="2">
+          <img class="fire" src="fogo.png" alt="fogo">
+        </div>
+        
+        <div class="stove-btn" id="stove-btn-1" data-id="1" title="Ligar boca esquerda"></div>
+        <div class="stove-btn" id="stove-btn-2" data-id="2" title="Ligar boca direita"></div>
+      </div>
+    </section>
+
+    <div id="order-balloon"></div>
+    <div id="coin-display">🪙 <span id="coin-count">0</span></div>
+
+    <!-- Disco de vinil no canto superior esquerdo (como as moedas no direito) -->
+    <div id="record-player" title="Tocar/Pausar música">
+      <img id="disco-img" src="discoMusica.png" alt="disco">
+    </div>
+
+    <!-- Player do YouTube oculto (API controla play/pause pelo disco) -->
+    <div id="youtube-player"></div>
+
+    <button id="nav-left" class="nav-arrow"></button>
+    <button id="nav-right" class="nav-arrow"></button>
+
+    <div class="modal-overlay show" id="welcome-modal">
+      <div class="modal-card">
+        <h2>🍵 Bem-vindo(a) ao teaHeaven!</h2>
+        <p>Receba o pedido do cliente, vá até a cozinha, arraste a água + 2 ingredientes para o bule, sirva no copo
+          certo e volte para entregar. Cada chá certo ganha uma frasezinha fofa de autocuidado. Sem pressa — o cliente
+          espera o quanto for preciso. 🌿</p>
+        <button id="start-btn">Começar a preparar chás</button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="reward-modal">
+      <div class="modal-card">
+        <h2>💌 Chá entregue!</h2>
+        <p class="letter" id="reward-phrase"></p>
+        <p>+10 moedas 🪙</p>
+        <button id="reward-close">Receber o próximo cliente</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- YouTube IFrame API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

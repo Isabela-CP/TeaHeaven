@@ -1,0 +1,34 @@
+# ============================================================
+# teaHeaven — .gitignore
+# ============================================================
+
+# Música: agora veiculada via YouTube IFrame API (não precisa do arquivo local)
+musica.mp3
+
+# Arquivos descartados
+tocaDisco.png
+discoMusica.png
+# --- Sistema operacional ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# --- Editores e IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs e temporários ---
+*.log
+*.tmp
+
+# --- Node (caso venha a usar alguma ferramenta) ---
+node_modules/
+npm-debug.log*
