@@ -95,6 +95,12 @@ let ytPlayer = null;
 let ytReady  = false;
 let musicOn  = false;
 
+// Carrega a API do YouTube dinamicamente para evitar problemas de carregamento no GitHub Pages
+const tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+const firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 // Callback global exigido pela API do YouTube
 window.onYouTubeIframeAPIReady = function () {
   ytPlayer = new YT.Player('youtube-player', {
@@ -113,6 +119,7 @@ window.onYouTubeIframeAPIReady = function () {
     },
     events: {
       onReady: (e) => { ytReady = true; e.target.setVolume(50); },
+      onError: (e) => { console.error("Erro no player do YouTube", e.data); }
     },
   });
 };
