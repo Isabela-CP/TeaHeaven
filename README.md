@@ -1,37 +1,53 @@
-# 🍵 Tea Heaven (Demo)
+# 🍵 Tea Heaven 
 
-Bem-vindo(a) ao **Tea Heaven**! Este é um jogo de gerenciamento aconchegante (estilo *cozy* / Studio Ghibli) onde você prepara chás mágicos e deliciosos para clientes fofos. 
+![Tea Heaven Banner](bancadaPedidos.png)
 
-> **⚠️ Aviso:** Esta é uma **Primeira Versão / Demo**. O jogo ainda está em desenvolvimento!
+Welcome to **Tea Heaven**! This is a cozy management game (Studio Ghibli style) where you brew magical and delicious teas for cute customers. 
 
-## 🍂 Sobre o Jogo
-A ideia principal é criar um ambiente relaxante. Você atende clientes na bancada, vai até a cozinha, escolhe a xícara certa, mistura a água com dois ingredientes mágicos e ferve tudo no fogão para entregar a bebida perfeita. Tudo isso acompanhado de uma trilha sonora ambiente agradável!
+> **⚠️ Note:** This is a **First Release / Demo**. The game is currently in development!
 
-## 📖 Livro de Receitas
-O jogo atualmente possui **9 receitas estritas**. Para acertar o pedido, você precisa da combinação exata de Xícara + Água + 2 Ingredientes.
+## 🍂 About the Game
+The main idea is to create a relaxing environment. You serve customers at the counter, go to the kitchen, pick the right cup, mix water with two magical ingredients, and boil it on the stove to deliver the perfect drink. All of this is accompanied by a pleasant ambient soundtrack!
 
-- **Chá Abraço de Urso:** Água + Limão + Mel
-- **Chá Aurora Boreal:** Água + Camomila + Hortelã
-- **Chá Raio de Sol:** Água + Pó Mágico + Cogumelos
-- **Chá Estelar:** Água + Limão + Pó Mágico
-- **Chá Bons Sonhos:** Água + Camomila + Mel
-- **Chá da Bruxa Boa:** Água + Hortelã + Cogumelos
-- **Chá Brisa Suave:** Água + Limão + Hortelã
-- **Chá Tarde de Outono:** Água + Camomila + Cogumelos
-- **Chá do Bosque:** Água + Pó Mágico + Mel
+### Game Previews
+| The Shop | The Kitchen |
+| :---: | :---: |
+| ![Shop](jogo1.png) | ![Kitchen](jogo2.png) |
 
-## 🛠️ Tecnologias
-O jogo foi construído 100% no lado do cliente (Client-side) usando as tecnologias fundamentais da web, sem frameworks pesados:
-- **HTML5** (Estrutura)
-- **Vanilla CSS3** (Estilização responsiva, animações e layout)
-- **Vanilla JavaScript** (Lógica de drag & drop, gerenciamento de estado e áudio via YouTube IFrame API)
 
-## 🚀 Como jogar localmente
-1. Acesse o link do jogo (disponível no GitHub Pages).
-2. Ligue o toca-discos no balcão para iniciar a música.
-3. Veja o pedido no balão de pensamento do cliente (Sapo, Coelho ou Urso).
-4. Clique na seta para ir à cozinha.
-5. Arraste a Água + 2 ingredientes para o bule e leve-o ao fogão.
-6. Clique no botão preto do fogão para acender o fogo e aguarde 3 segundos.
-7. Despeje o chá pronto na xícara correta.
-8. Clique no copo cheio, volte para a loja e clique no cliente para entregar!
+## 📖 Recipe Book
+The game currently features **9 strict recipes**. To get the order right, you need the exact combination of Cup + Water + 2 Ingredients.
+
+- **Bear Hug Tea:** Water + Lemon + Honey
+- **Aurora Borealis Tea:** Water + Chamomile + Mint
+- **Sunbeam Tea:** Water + Magic Dust + Mushrooms
+- **Stellar Tea:** Water + Lemon + Magic Dust
+- **Sweet Dreams Tea:** Water + Chamomile + Honey
+- **Good Witch Tea:** Water + Mint + Mushrooms
+- **Gentle Breeze Tea:** Water + Lemon + Mint
+- **Autumn Afternoon Tea:** Water + Chamomile + Mushrooms
+- **Forest Tea:** Water + Magic Dust + Honey
+
+## 🛠️ Technologies
+The game was built 100% Client-side using fundamental web technologies, without any heavy frameworks:
+- **HTML5** (Structure)
+- **Vanilla CSS3** (Responsive styling, keyframe animations, and layout)
+- **Vanilla JavaScript** (Drag & drop logic, state management, and audio integration)
+
+## 🚀 How to Play
+
+**Play Online:**
+1. Access the live game link on **GitHub Pages** (https://isabela-cp.github.io/TeaHeaven/).
+
+**Run Locally:**
+1. Clone this repository to your machine.
+2. Open the `index.html` file in any modern web browser.
+
+**Gameplay Steps:**
+1. Turn on the record player on the counter to start the music.
+2. Check the customer's order in their thought bubble (Frog, Bunny, or Bear).
+3. Click the arrow to go to the kitchen.
+4. Drag Water + 2 ingredients into the teapot and place it on the stove.
+5. Click the black button on the stove to light the fire and wait 3 seconds.
+6. Pour the ready tea into the correct cup.
+7. Click the full cup to hold it, go back to the shop, and click the customer to deliver it!
